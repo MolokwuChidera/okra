@@ -1,0 +1,24 @@
+### Problem 1
+
+**Route**
+
+[https://docs.okra.ng/reference/fetchauths](https://docs.okra.ng/reference/fetchauths)
+
+Answer: The type of http call was not provided but based on the actual documentation this is to be a POST call.
+The first issue with this request is the url of the route which points to the documentation rather than the actual api endpoint which should be https://api.okra.ng/v2/products/auths and this is why request returned error 404 page not found as there is no such endpoint available.
+
+When a call is made using the correct endpoint it returns authentication with a default limit of 10 as limit was not specified in the payload.
+
+
+### Problem 2
+
+**Route**
+
+[https://docs.okra.ng/reference/getidentitybydate](https://docs.okra.ng/reference/getidentitybydate)
+
+
+Answer: The type of http call was not provided but based on the actual documentation this is to be a POST call. There are two issues with this particular request. The first issue is the route being used which points to the documentation instead of the actual api endpoint: https://api.okra.ng/v2/identity/getByDate. This is why when tried via postman it will return an error 404 page not found.
+
+However there is also an issue with the payload being sent. The payload the endpoint is expecting is two parameters: "from" and "to" which point to the date range which is being requested, however what was passed was the "page" payload with a value of 1.
+
+When a call is made using the correct endpoint and a date range of 2022-10-01 to 2022-10-02 it returns a 200 success with the message that no identity is available for the provided date range.
