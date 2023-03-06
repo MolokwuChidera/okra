@@ -15,7 +15,7 @@ programmatically indicate that the connection was successful or it thrown an err
 advance. Mike
 
 Answer:
-Hi Mike, for an integration to okra api your application needs to be able to handle http status code exceptions for example a 200 shows a request succeeded and a 201 shows you a successful  request usually a creation request while a 400, 401 or a 500 exception ties to an error in the request made. We advise that you log the request_id of the particular request as you throw the exception to enable easy and faster troubelshooting of an issue when raised.
+Hi Mike, for an integration to okra api your application needs to be able to handle http status code exceptions. For example a 200 shows a request succeeded and a 201 shows you a successful request, usually a creation request while a 400, 401 or a 500 exception ties to an error in the request made. We advise that you log the request_id of the particular request as you throw the exception to enable easy and faster troubelshooting of an issue when raised.
 
 Below is a link which will give you a bit more clarity if needed. Please do reach out if you need any further clarification
 https://docs.okra.ng/docs/integration-checklist
