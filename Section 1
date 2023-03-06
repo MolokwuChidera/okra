@@ -1,0 +1,18 @@
+Question: Peter, a member of the sales team just onboarded a high value merchant - Codak Ventures.
+Before go-live during the integration review session, you had given Codak Ventures' integration a
+green light and the merchant has gone ahead to open the service to its customers.
+In recent times, the merchant has escalated a number of issues which point to the fact that there
+are issues with their integration. These errors are primarily responsible for the escalated issues.
+The dev team for the merchant is becoming impatient and has threatened to churn if their issues
+are not resolved ASAP. How will you handle such a merchant and manage the expectations of
+Peter in preventing Churn.
+
+
+
+Answer:
+During integrations especially if it is the pilot stage after go-live, there can be budding issues which come up that need not threaten the business long-term if handled properly.The first thing would be to respond quickly to peter and assure him the issue is being looked at which shows the priority being given to the matter and carry him along in all engagements being done to fix the issue showing that actual work is happening in attempting to resolve the issue.
+I would advise the merchant Codak ventures to temporarily close the service to their customers if the issue being escalated has financial impact so it can be looked into and setup a meeting with the devs to test out the integration to confirm if the issue occuring is tied to an improper integration. I believe this would show a commitment to Codak that they are important and their customers as well are important to us. 
+
+
+
+
