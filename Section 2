@@ -1,0 +1,45 @@
+Question:
+As a Technical Support Engineer, you'll need to have exceptional people skills and the
+engineering mindset that will allow you to troubleshoot, diagnose and resolve while
+communicating the issue effectively to the client. As such, we'd like to evaluate your language
+and engineering skills.
+Please answer on the below list of questions as if you would answer a customer in real-life, feel
+free to use the Okra docs (https://docs.okra.ng/docs).
+
+
+Question 1:
+Hey Okra team, I'm trying to get the latest transactions and I'm hitting the
+https://api.okra.ng/v2/transactions/getByld but it's only giving me a week old transactions for
+some reason. Please help! Jesse
+
+Answer:
+
+Hi jesse, please attempt to call this endpoint(https://api.okra.ng/v2/transactions/refresh) and confirm if you get a 200 response. For only older transactions to be fetched it means the transactions for that account are not updating due to the refresh endpoint failing. If you get a response different from 200 it means there must be an issue with that integration or the bearer token being used is invalid and might need to be changed.
+If you run into any further issues kindly reach out as I am available for any follow up questions you might have.
+
+Question 2:
+Hi! I've setup the Widget and I can connect the account, however I don't understand how to
+programmatically indicate that the connection was successful or it thrown an error. Thanks in
+advance. Mike
+
+Answer:
+Hi Mike, for an integration to okra api your application needs to be able to handle http status code exceptions for example a 200 shows a request succeeded and a 201 shows you a successful  request usually a creation request while a 400,401 or a 500 exception ties to an error in the request made. We advise that you log the request_id of the particular request as you throw the exception to enable easy and faster troubelshooting of an issue when raised.
+
+
+Below is a link which will give you a bit more clarity if needed. Please do reach out if you need any further clarification
+https://docs.okra.ng/docs/integration-checklist
+
+
+
+Question 3:
+Hello, my name is Blessing and I would like to understand how do I test Okra. I wouldn't like to
+pay for my testing.
+
+
+Answer
+
+Hi Blessing, Okra has a free fully featured environment that can be used for application development and testing which means you do not need to pay for testing and every feature you would make use of on production is also available on our sandbox environment. To start using Sandbox, you make an HTTPS POST request to the endpoints on the https://api.okra.ng/v2/sandbox/ domain. In order to use the Sandbox with a client library, specify production-sandbox as your environment when initializing.
+
+
+Below is a link which will give you a bit more clarity if needed. Please do reach out if you need any further clarification
+https://docs.okra.ng/docs/creating-sandbox-customers
